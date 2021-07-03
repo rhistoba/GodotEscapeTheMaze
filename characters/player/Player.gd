@@ -1,4 +1,4 @@
-extends "res://Character.gd"
+extends "res://characters/Character.gd"
 
 signal moved
 signal dead
