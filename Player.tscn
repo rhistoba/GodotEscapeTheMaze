@@ -15,3 +15,5 @@ frame = 0
 
 [node name="Camera2D" type="Camera2D" parent="." index="8"]
 current = true
+
+[connection signal="area_entered" from="." to="." method="_on_Player_area_entered"]
