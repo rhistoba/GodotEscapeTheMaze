@@ -14,6 +14,12 @@ func _process(delta):
 
 func _on_Player_area_entered(area):
 	if area.is_in_group('enemies'):
+		var enemy = area
+		enemy.hide()
+		set_process(false)
+		$CollisionShape2D.set_deferred('disabled', true)
+		$AnimationPlayer.play('die')
+		yield($AnimationPlayer, 'animation_finished')
 		emit_signal('dead')
 	if area.has_method('pickup'):
 		area.pickup()
