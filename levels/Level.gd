@@ -46,10 +46,10 @@ func spawn_items():
 				add_child(p)
 
 func game_over():
-	pass
+	Global.game_over()
 
 func _on_Player_win():
-	pass
+	Global.next_level()
 
 func _on_Player_grabbed_key():
 	for cell in doors:
