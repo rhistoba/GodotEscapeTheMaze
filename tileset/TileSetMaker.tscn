@@ -22,8 +22,9 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="crate_brown"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_brown/StaticBody2D"]
-position = Vector2( 2.6226e-06, -2.38419e-07 )
-scale = Vector2( 3.2, 3.2 )
+position = Vector2( 9.6, 9.6 )
+scale = Vector2( 0.8125, 0.8125 )
+polygon = PoolVector2Array( -51.2, -51.2, 27.5692, -51.2, 27.5692, -51.2, 27.5692, -51.2, 27.5692, 27.5692, -51.2, 27.5692 )
 
 [node name="crate_red" type="Sprite" parent="."]
 position = Vector2( 96, 32 )
@@ -40,6 +41,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_red/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="crate_blue" type="Sprite" parent="."]
 position = Vector2( 160, 32 )
@@ -56,6 +58,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_blue/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="crate_green" type="Sprite" parent="."]
 position = Vector2( 224, 32 )
@@ -72,6 +75,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_green/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="crate_grey" type="Sprite" parent="."]
 position = Vector2( 288, 32 )
@@ -88,6 +92,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="crate_grey/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="wall_red" type="Sprite" parent="."]
 position = Vector2( 32, 96 )
@@ -104,6 +109,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_red/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="wall_brick" type="Sprite" parent="."]
 position = Vector2( 96, 96 )
@@ -120,6 +126,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_brick/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="wall_gray" type="Sprite" parent="."]
 position = Vector2( 160, 96 )
@@ -136,6 +143,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_gray/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="wall_brown" type="Sprite" parent="."]
 position = Vector2( 224, 96 )
@@ -152,6 +160,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="wall_brown/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 10, -10, 10 )
 
 [node name="door_red" type="Sprite" parent="."]
 position = Vector2( 32, 352 )
@@ -168,6 +177,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door_red/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 9.99999, -10, 9.99999 )
 
 [node name="door_green" type="Sprite" parent="."]
 position = Vector2( 96, 352 )
@@ -184,6 +194,7 @@ __meta__ = {
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="door_green/StaticBody2D"]
 position = Vector2( 2.6226e-06, -2.38419e-07 )
 scale = Vector2( 3.2, 3.2 )
+polygon = PoolVector2Array( -10, -10, 10, -10, 10, 9.99999, -10, 9.99999 )
 
 [node name="ground_green" type="Sprite" parent="."]
 position = Vector2( 32, 160 )
