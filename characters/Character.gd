@@ -8,8 +8,8 @@ var facing = 'right'
 var moves = {
 	'right': Vector2(1, 0),
 	'left': Vector2(-1, 0),
-	'up': Vector2(0, 1),
-	'down': Vector2(0, -1)
+	'up': Vector2(0, -1),
+	'down': Vector2(0, 1)
 }
 onready var raycasts = {
 	'right': $RayCastRight,
