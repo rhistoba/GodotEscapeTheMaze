@@ -43,7 +43,7 @@ func next_level():
 func setup():
 	var f = File.new()
 	if f.file_exists(score_file):
-		f.open(score_file)
+		f.open(score_file, File.READ)
 		var content = f.get_as_text()
 		highscore = int(content)
 		f.close()

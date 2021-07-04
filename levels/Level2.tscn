@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://tileset/tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://characters/player/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://levels/Level.gd" type="Script" id=3]
 [ext_resource path="res://characters/enemy/Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/Pickup.tscn" type="PackedScene" id=5]
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=6]
 
 [node name="Level2" type="Node2D"]
 script = ExtResource( 3 )
@@ -37,3 +38,5 @@ tile_data = PoolIntArray( 65548, 19, 0, 131074, 14, 0, 131076, 16, 0, 393222, 16
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 96, 96 )
+
+[node name="HUD" parent="." instance=ExtResource( 6 )]
