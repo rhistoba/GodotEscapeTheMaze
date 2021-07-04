@@ -6,7 +6,7 @@
 [ext_resource path="res://characters/enemy/Enemy.tscn" type="PackedScene" id=4]
 [ext_resource path="res://items/Pickup.tscn" type="PackedScene" id=5]
 
-[node name="Level1" type="Node2D"]
+[node name="Level2" type="Node2D"]
 script = ExtResource( 3 )
 Enemy = ExtResource( 4 )
 Pickup = ExtResource( 5 )
