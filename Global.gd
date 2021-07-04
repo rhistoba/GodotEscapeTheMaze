@@ -9,6 +9,7 @@ var score = 0
 
 var start_screen = 'res://ui/StartScreen.tscn'
 var end_screen = 'res://ui/EndScreen.tscn'
+var scene_to_scene = 'res://ui/SceneToScene.tscn'
 
 var highscore = 0
 var score_file = 'user://highscore.txt'
@@ -38,7 +39,10 @@ func next_level():
 	if current_level >= levels.size():
 		game_over()
 	else:
-		get_tree().change_scene(levels[current_level])
+		get_tree().change_scene(scene_to_scene)
+
+func change_level():
+	get_tree().change_scene(levels[current_level])
 
 func setup():
 	var f = File.new()
